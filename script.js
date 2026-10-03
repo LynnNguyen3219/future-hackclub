@@ -1,5 +1,7 @@
-const windowBox = document.getElementById('startmenu');
-const titlebar = document.getElementById('starttitlebar');
+// THIS IS MY FIRST TIME USING JAVASCRIPT SO PLEASE BE NICE TO ME I USED TUTORIALS PLEASE
+
+const windowBox = document.getElementById('window');
+const titlebar = document.getElementById('titlebar');
 
 let mouseDragging = false;
 let posX = 0;
@@ -32,6 +34,6 @@ function stopDragging() {
 titlebar.addEventListener('pointerup', stopDragging);
 titlebar.addEventListener('pointerleave', stopDragging);
 
-function closestartmenu() {
+function closewindow() {
     windowBox.style.display = 'none';
 }

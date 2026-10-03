@@ -4,24 +4,49 @@
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="./images/favicon.png">
         <title>aquaOS | lynn's desktop</title>
     </head>
     <body>
-        <div class="window" id="startmenu">
-            <div class="titlebar" id="starttitlebar">
-                <p>about me!</p>
+        <div class="window" id="window">
+            <div class="titlebar" id="titlebar">
+                <p>welcome.txt</p>
                 <div class="titlebarbuttons">
                     <button class="minimize">–</button>
                     <button class="maximize">▢</button>
-                    <button class="close" onclick="closestartmenu()">✕</button>
+                    <button class="close" onclick="closewindow()">✕</button>
                 </div>
             </div>
-            <div class="content">
+            <div class="windowcontent">
                 <p>hi, my name is lynn! this is a test :)</p>
-                <p>lorem ipsum dolor sit amet and whatnot</p>
+                <div class="navcontainer">
+                    <div class="navitem">
+                        <button class="navbutton" id="aboutme"><img src="./images/icon1.png" style="width: 32px; height: 32px;"></button>
+                    <p>about me</p>
+                    </div>
+                    <div class="navitem">
+                        <button class="navbutton" id="favorites"><img src="./images/icon2.png" style="width: 32px; height: 32px;"></button>
+                        <p>favorites</p>
+                    </div>
+                    <div class="navitem">
+                        <button class="navbutton" id="interests"><img src="./images/icon3.png" style="width: 32px; height: 32px;"></button>
+                        <p>interests</p>
+                    </div>
+                    <div class="navitem">
+                        <button class="navbutton" id="education"><img src="./images/icon4.png" style="width: 32px; height: 32px;"></button>
+                        <p>education</p>
+                    </div>
+                    <div class="navitem">
+                        <button class="navbutton" id="contact"><img src="./images/icon5.png" style="width: 32px; height: 32px;"></button>
+                        <p>contact</p>
+                    </div>
+                    <div class="navitem">
+                        <button class="navbutton" id="wallpaper"><img src="./images/icon6.png" style="width: 32px; height: 32px;"></button>
+                        <p>wallpaper</p>
+                    </div>
+                </div>
             </div>
         </div>
-
         <script src="script.js"></script>
     </body>
 </html>
