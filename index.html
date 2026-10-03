@@ -2,15 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta name="theme-color" content="#b0e2ff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="application-name" content="lynnUX">
+        <meta name="mobile-web-app-capable" content="yes"> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="lynnUX">
+
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="./images/favicon.png">
+        <link rel="apple-touch-icon" href="./images/favicon.png">
+
         <title>lynnUX | desktop</title>
     </head>
     <body>
+        <!-- windows insert eyes emoji here -->
         <div class="window" id="startwindow">
             <div class="titlebar">
-                <p>welcome.txt</p>
+                <p>welcome.exe</p>
                 <div class="titlebarbuttons">
                     <button class="minimize">–</button>
                     <button class="maximize">▢</button>
@@ -18,32 +27,32 @@
                 </div>
             </div>
             <div class="windowcontent">
-                <h2>welcome back, user!</h2>
+                <h2>welcome back to the future, user!</h2>
                 <p>hi, my name is <b>lynn nguyen</b>! (she/her/hers)<br>i'm a full-time student, developer, and aspiring cyberops specialist from spokane, washington! :)</p>
                 <div class="navcontainer">
                     <div class="navitem">
-                        <button class="navbutton" id="aboutme"><img src="./images/icon1.png"></button>
+                        <button class="navbutton" id="aboutme"><img src="./images/icons/icon1.png"></button>
                     <p>about me</p>
                     </div>
                     <div class="navitem">
-                        <button class="navbutton" id="favorites"><img src="./images/icon2.png"></button>
+                        <button class="navbutton" id="favorites"><img src="./images/icons/icon2.png"></button>
                         <p>favorites</p>
                     </div>
                     <div class="navitem">
-                        <button class="navbutton" id="interests"><img src="./images/icon3.png"></button>
+                        <button class="navbutton" id="interests"><img src="./images/icons/icon3.png"></button>
                         <p>interests</p>
                     </div>
                     <div class="navitem">
-                        <button class="navbutton" id="skills"><img src="./images/icon4.png"></button>
+                        <button class="navbutton" id="skills"><img src="./images/icons/icon4.png"></button>
                         <p>skills</p>
                     </div>
                     <div class="navitem">
-                        <button class="navbutton" id="contact"><img src="./images/icon5.png"></button>
-                        <p>contact</p>
+                        <button class="navbutton" id="clubs"><img src="./images/icons/icon6.png"></button>
+                        <p>clubs</p>
                     </div>
                     <div class="navitem">
-                        <button class="navbutton" id="attributions"><img src="./images/icon6.png"></button>
-                        <p>attributions</p>
+                        <button class="navbutton" id="contact"><img src="./images/icons/icon5.png"></button>
+                        <p>contact</p>
                     </div>
                 </div>
             </div>
@@ -146,7 +155,7 @@
         </div>
         <div class="window" id="contactwindow">
             <div class="titlebar">
-                <p>contact.txt</p>
+                <p>contact.exe</p>
                 <div class="titlebarbuttons">
                     <button class="minimize">–</button>
                     <button class="maximize">▢</button>
@@ -155,19 +164,73 @@
             </div>
             <div class="windowcontent">
                 <h2>contact me!</h2>
-                <p>feel free to reach out to me for any reason, i love meeting and talking to people!!!</p>
+                <p>feel free to reach out to me for any reason, i love meeting and talking to people!!! i will try to get back to you asap!!!</p>
                 <div class="contactcontainer">
                     <div class="contactitem">
-                        <a href="mailto:lynnnguyen3219@gmail.com" class="contactbutton"><img src="./images/icon7.png"></a>
+                        <a href="mailto:lynnnguyen3219@gmail.com" class="contactbutton"><img src="./images/icons/icon7.png"></a>
                         <p>email</p>
                     </div>
                     <div class="contactitem">
-                        <a href="https://github.com/LynnNguyen3219" class="contactbutton"><img src="./images/icon8.png"></a>
+                        <a href="https://github.com/LynnNguyen3219" class="contactbutton"><img src="./images/icons/icon8.png"></a>
                         <p>github</p>
                     </div>
                     <div class="contactitem">
-                        <a href="https://www.linkedin.com/in/lynnnguyen3219/" class="contactbutton"><img src="./images/icon9.png"></a>
+                        <a href="https://www.linkedin.com/in/lynnnguyen3219/" class="contactbutton"><img src="./images/icons/icon9.png"></a>
                         <p>linkedin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="window" id="clubswindow">
+            <div class="titlebar">
+                <p>extracurriculars.txt</p>
+                <div class="titlebarbuttons">
+                    <button class="minimize">–</button>
+                    <button class="maximize">▢</button>
+                    <button class="close" onclick="closewindow()">✕</button>
+                </div>
+            </div>
+            <div class="windowcontent">
+                <h2>my extracurriculars!</h2>
+                <p><b>girls who code:</b> president and co-founder of a local chapter</p>
+                <p><b>first robotics:</b> subteam leader and co-founder [4x regional finalist, 2x regional captain]</p>
+                <p><b>cyberpatriot</b> team specialist [2nd place state platinum divison]</p>
+                <p><b>fbla:</b> chapter officer and treasurer [1x national competitor, 3x state finalist, 4x regional finalist]</p>
+                <p><b>skillsusa:</b> competitor [1x state competitor, 1x regional finalist]</p>
+            </div>
+        </div>
+        <div class="window" id="settingswindow">
+            <div class="titlebar">
+                <p>settings.exe</p>
+                <div class="titlebarbuttons">
+                    <button class="minimize">–</button>
+                    <button class="maximize">▢</button>
+                    <button class="close" onclick="closewindow()">✕</button>
+                </div>
+            </div>
+            <div class="windowcontent">
+                <h2>change wallpaper</h2>
+                <p>pick a wallpaper from the presets below!</p>
+                <div class="wallpapercontainer">
+                    <div class="wallpaperitem">
+                        <button class="wallpaperbutton" id="wallpaper1"><img src="./images/wallpapers/wallpaper1.jpg"></button>
+                    </div>
+                    <div class="wallpaperitem">
+                        <button class="wallpaperbutton" id="wallpaper2"><img src="./images/wallpapers/wallpaper2.jpg"></button>
+                    </div>
+                    <div class="wallpaperitem">
+                        <button class="wallpaperbutton" id="wallpaper3"><img src="./images/wallpapers/wallpaper3.jpg"></button>
+                    </div>
+                </div>
+                <div class="wallpapercontainer">
+                    <div class="wallpaperitem">
+                        <button class="wallpaperbutton" id="wallpaper4"><img src="./images/wallpapers/wallpaper4.jpg"></button>
+                    </div>
+                    <div class="wallpaperitem">
+                        <button class="wallpaperbutton" id="wallpaper5"><img src="./images/wallpapers/wallpaper5.jpg"></button>
+                    </div>
+                    <div class="wallpaperitem">
+                        <button class="wallpaperbutton" id="wallpaper6"><img src="./images/wallpapers/wallpaper6.jpg"></button>
                     </div>
                 </div>
             </div>
@@ -188,6 +251,28 @@
                 <p><a href="https://www.iconsdb.com" style="color:#0f447a;"><b>iconsdb:</b></a> this is where i got all of my icons for the buttons</p>
             </div>
         </div>
+        <!-- wowza its the taskbar woah -->
+         <div class="taskbar">
+            <div class="taskbaritems">
+                <button class="taskbarapp" id="start">
+                    <img src="./images/icons/icon10.png">
+                </button>
+                <button class="taskbarapp" id="settings">
+                    <img src="./images/icons/icon11.png">
+                </button>
+                <button class="taskbarapp" id="widgets">
+                    <img src="./images/icons/icon12.png">
+                </button>
+                <button class="taskbarapp" id="attributions">
+                    <img src="./images/icons/icon13.png">
+                </button>
+            </div>
+            <div class="systemtray">
+                <span id="clock"></span>
+                <br>
+                <span id="date"></span>
+            </div>
+         </div>
         <script src="script.js"></script>
     </body>
 </html>

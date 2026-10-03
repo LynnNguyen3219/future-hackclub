@@ -87,8 +87,12 @@ function centerwindow(desktopwindow) {
     desktopwindow.style.top = y + "px";
 }
 
-const aboutme = document.getElementById('aboutme');
-const aboutwindow = document.getElementById('aboutwindow');
+start.addEventListener('click', function() {
+    startwindow.style.display = 'block';
+    centerwindow(startwindow);
+
+    frontwindow(startwindow);
+});
 
 let aboutpos = false;
 aboutme.addEventListener('click', function() {
@@ -134,6 +138,17 @@ skills.addEventListener('click', function() {
     frontwindow(skillswindow);
 });
 
+let clubspos = false;
+clubs.addEventListener('click', function() {
+    clubswindow.style.display = 'block';
+    if (!clubspos) {
+        randompos(clubswindow);
+        clubspos = true;
+    }
+
+    frontwindow(clubswindow);
+});
+
 let contactpos = false;
 contact.addEventListener('click', function() {
     contactwindow.style.display = 'block';
@@ -145,6 +160,17 @@ contact.addEventListener('click', function() {
     frontwindow(contactwindow);
 });
 
+let settingspos = false;
+settings.addEventListener('click', function() {
+    settingswindow.style.display = 'block';
+    if (!settingspos) {
+        randompos(settingswindow);
+        settingspos = true;
+    }
+
+    frontwindow(settingswindow);
+});
+
 let attributionspos = false;
 attributions.addEventListener('click', function() {
     attributionswindow.style.display = 'block';
@@ -154,4 +180,49 @@ attributions.addEventListener('click', function() {
     }
 
     frontwindow(attributionswindow);
+});
+
+// systemtray
+
+function clock() {
+    const now = new Date();
+
+    document.getElementById("clock").textContent =
+    now.toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+}
+
+clock();
+setInterval(clock, 1000);
+
+let today = new Date();
+
+let options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+};
+
+document.getElementById("date").textContent =
+today.toLocaleDateString("en-US", options);
+
+// wallpaper
+
+const wallpapers = {
+    wallpaper1: "images/wallpapers/wallpaper1.jpg",
+    wallpaper2: "images/wallpapers/wallpaper2.jpg",
+    wallpaper3: "images/wallpapers/wallpaper3.jpg",
+    wallpaper4: "images/wallpapers/wallpaper4.jpg",
+    wallpaper5: "images/wallpapers/wallpaper5.jpg",
+    wallpaper6: "images/wallpapers/wallpaper6.jpg"
+};
+
+Object.keys(wallpapers).forEach(id => {
+    document.getElementById(id).addEventListener("click", function(){
+        document.body.style.backgroundImage= `url("${wallpapers[id]}")`;
+    });
 });
