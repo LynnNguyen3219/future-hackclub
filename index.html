@@ -8,8 +8,8 @@
         <title>aquaOS | lynn's desktop</title>
     </head>
     <body>
-        <div class="window" id="window">
-            <div class="titlebar" id="titlebar">
+        <div class="window" id="startwindow">
+            <div class="titlebar">
                 <p>welcome.txt</p>
                 <div class="titlebarbuttons">
                     <button class="minimize">–</button>
@@ -18,33 +18,101 @@
                 </div>
             </div>
             <div class="windowcontent">
-                <p>hi, my name is lynn! this is a test :)</p>
+                <h2>welcome back, user!</h2>
+                <p>hi, my name is <b>lynn nguyen</b>! (she/her/hers)<br>i'm a full-time student, developer, and aspiring cyberops specialist from spokane, washington! :)</p>
                 <div class="navcontainer">
                     <div class="navitem">
-                        <button class="navbutton" id="aboutme"><img src="./images/icon1.png" style="width: 32px; height: 32px;"></button>
+                        <button class="navbutton" id="aboutme"><img src="./images/icon1.png"></button>
                     <p>about me</p>
                     </div>
                     <div class="navitem">
-                        <button class="navbutton" id="favorites"><img src="./images/icon2.png" style="width: 32px; height: 32px;"></button>
+                        <button class="navbutton" id="favorites"><img src="./images/icon2.png"></button>
                         <p>favorites</p>
                     </div>
                     <div class="navitem">
-                        <button class="navbutton" id="interests"><img src="./images/icon3.png" style="width: 32px; height: 32px;"></button>
+                        <button class="navbutton" id="interests"><img src="./images/icon3.png"></button>
                         <p>interests</p>
                     </div>
                     <div class="navitem">
-                        <button class="navbutton" id="education"><img src="./images/icon4.png" style="width: 32px; height: 32px;"></button>
-                        <p>education</p>
+                        <button class="navbutton" id="skills"><img src="./images/icon4.png"></button>
+                        <p>skills</p>
                     </div>
                     <div class="navitem">
-                        <button class="navbutton" id="contact"><img src="./images/icon5.png" style="width: 32px; height: 32px;"></button>
+                        <button class="navbutton" id="contact"><img src="./images/icon5.png"></button>
                         <p>contact</p>
                     </div>
                     <div class="navitem">
-                        <button class="navbutton" id="wallpaper"><img src="./images/icon6.png" style="width: 32px; height: 32px;"></button>
+                        <button class="navbutton" id="wallpaper"><img src="./images/icon6.png"></button>
                         <p>wallpaper</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="window" id="aboutwindow">
+            <div class="titlebar">
+                <p>about.txt</p>
+                <div class="titlebarbuttons">
+                    <button class="minimize">–</button>
+                    <button class="maximize">▢</button>
+                    <button class="close" onclick="closewindow()">✕</button>
+                </div>
+            </div>
+            <div class="windowcontent">
+                <h2>about me!</h2>
+                <p>- im a junior at spokane valley tech</p>
+                <p>- my timezone is utc-8 (pacific standard time)</p>
+                <p>- i speak english and vietnamese fluently</p>
+                <p>- my personality profile is enfp 7w6 sx/sp 729</p>
+                <p>- i love making new friends!!!! :D</p>
+            </div>
+        </div>
+        <div class="window" id="favoriteswindow">
+            <div class="titlebar">
+                <p>favs.txt</p>
+                <div class="titlebarbuttons">
+                    <button class="minimize">–</button>
+                    <button class="maximize">▢</button>
+                    <button class="close" onclick="closewindow()">✕</button>
+                </div>
+            </div>
+            <div class="windowcontent">
+                <h2>my favorite things!</h2>
+                <p><b>games:</b> persona, final fantasy, kingdom hearts, fatal frame, life is strange, minecraft, roblox, project diva, project sekai, osu</p>
+                <p><b>music:</b> tyler the creator, lucy bedroque, weezer, tame impala, novulent, pinkpantheress, clark rainbow, lil hero, jack stauber</p>
+                <p><b>media:</b> tokusatsu films, internet documentaries, anime/manga, lost media, args, web animations, visual novels</p>
+            </div>
+        </div>
+        <div class="window" id="interestswindow">
+            <div class="titlebar">
+                <p>interests.txt</p>
+                <div class="titlebarbuttons">
+                    <button class="minimize">–</button>
+                    <button class="maximize">▢</button>
+                    <button class="close" onclick="closewindow()">✕</button>
+                </div>
+            </div>
+            <div class="windowcontent">
+                <h2>my interests!</h2>
+                <span>aviation</span>
+                <span>retro tech</span>
+                <span>cybersecurity</span>
+                <span>operating systems</span>
+                <span>networking</span>
+                <span>programming</span>
+                <span>web development</span>
+                <span>robotics</span>
+                <span>game development</span>
+                <span>computer hardware</span>
+                <span>internet culture</span>
+                <span>digital media</span>
+                <span>mythology</span>
+                <span>traveling</span>
+                <span>arts & crafts</span>
+                <span>content creation</span>
+                <span>gaming</span>
+                <span>reading</span>
+                <span>music</span>
+                <span>traveling</span>
             </div>
         </div>
         <script src="script.js"></script>
