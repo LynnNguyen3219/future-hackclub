@@ -122,3 +122,36 @@ interests.addEventListener('click', function() {
 
     frontwindow(interestswindow);
 });
+
+let skillspos = false;
+skills.addEventListener('click', function() {
+    skillswindow.style.display = 'block';
+    if (!skillspos) {
+        randompos(skillswindow);
+        skillspos = true;
+    }
+
+    frontwindow(skillswindow);
+});
+
+let contactpos = false;
+contact.addEventListener('click', function() {
+    contactwindow.style.display = 'block';
+    if (!contactpos) {
+        randompos(contactwindow);
+        contactpos = true;
+    }
+
+    frontwindow(contactwindow);
+});
+
+let attributionspos = false;
+attributions.addEventListener('click', function() {
+    attributionswindow.style.display = 'block';
+    if (!attributionspos) {
+        randompos(attributionswindow);
+        attributionspos = true;
+    }
+
+    frontwindow(attributionswindow);
+});
