@@ -512,6 +512,10 @@ setInterval(getweather, 15 * 60 * 1000);
 const toggleweather = document.getElementById("toggleweather");
 const togglemusic = document.getElementById("togglemusic");
 
+const mobile = window.matchMedia("(max-width: 600px)").matches;
+
+if (mobile) { toggleweather.checked = false; togglemusic.checked = false; }
+
 toggleweather.addEventListener("change", function() {
     weather.classList.toggle("widget-hidden", !toggleweather.checked);
 });
@@ -523,3 +527,6 @@ togglemusic.addEventListener("change", function() {
     audio.pause();
     }
 });
+
+weather.classList.toggle("widget-hidden", !toggleweather.checked); 
+musicplayer.classList.toggle("widget-hidden", !togglemusic.checked);

@@ -520,3 +520,242 @@ label{
 .widget-hidden {
     display: none !important;
 }
+
+/* phone compatibility yippee */ 
+
+@media screen and (max-width: 600px) {
+
+    .window {
+        width: min(90vw, 550px);
+        max-width: calc(100vw - 20px);
+        max-height: calc(100dvh - 80px);
+        border-width: 1.5px;
+        border-radius: 9px;
+    }
+
+    .titlebar {
+        font-size: clamp(0.85rem, 3.5vw, 1rem);
+        padding: 2px 5px;
+    }
+
+    .windowcontent {
+        padding: clamp(7px, 2.5vw, 10px);
+    }
+
+    .windowcontent h2 {
+        font-size: clamp(1.1rem, 4.5vw, 1.4rem);
+    }
+
+    .windowcontent p, .windowcontent span {
+        font-size: clamp(0.85rem, 3.5vw, 1rem);
+    }
+
+    .windowcontent span {
+        padding: 0 6px;
+        white-space: normal;
+    }
+
+    .close, .minimize, .maximize {
+        font-size: clamp(0.85rem, 3.5vw, 1rem);
+    }
+
+     .navcontainer, .contactcontainer {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: min(100%, 300px);
+        gap: 3px;
+        margin: auto;
+    }
+
+    .navitem, .contactitem {
+        padding: clamp(5px, 2vw, 10px) 3px;
+    }
+
+    .navitem img, .contactitem img {
+        width: clamp(25px, 8vw, 40px);
+        height: clamp(25px, 8vw, 40px);
+    }
+
+    .navitem p, .contactitem p {
+        font-size: clamp(0.7rem, 3vw, 0.9rem);
+    }
+
+    .wallpapercontainer {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-flow: row;
+        grid-auto-rows: auto;
+        align-items: start;
+        justify-content: stretch;
+        width: 100%;
+        gap: 8px;
+        box-sizing: border-box;
+    }
+
+    .wallpapercontainer {
+        display: contents;
+    }
+
+    .windowcontent:has(.wallpapercontainer) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        align-items: start;
+    }
+
+    .windowcontent:has(.wallpapercontainer) > h2,
+    .windowcontent:has(.wallpapercontainer) > p {
+        grid-column: 1 / -1;
+    }
+
+    .wallpaperitem {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        min-width: 0;
+        padding: 5px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .wallpaperbutton {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .wallpaperitem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .taskbar {
+        height: clamp(42px, 12vw, 48px);
+        gap: 5px;
+        padding: 0 5px;
+    }
+
+    .taskbaritems {
+        gap: 5px;
+    }
+
+    .taskbarapp {
+        width: clamp(32px, 9vw, 40px);
+        height: clamp(32px, 9vw, 40px);
+        flex-shrink: 0;
+        border-radius: 10px;
+    }
+
+    .taskbarapp img {
+        width: 75%;
+        height: 75%;
+    }
+
+    .systemtray {
+        font-size: clamp(0.65rem, 2.5vw, 0.85rem);
+        padding: 0 3px;
+    }
+
+    .desktopshortcuts {
+        height: calc(100dvh - 110px);
+        max-width: 100vw;
+    }
+
+    .shortcut {
+        width: clamp(55px, 17vw, 75px);
+        margin: clamp(5px, 2vw, 15px);
+        padding-top: 6px;
+        border-radius: 10px;
+    }
+
+    .shortcut img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .desktopshortcuts p {
+        font-size: clamp(0.65rem, 2.8vw, 0.85rem);
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+
+    .musicplayer{
+        position: fixed;
+        z-index: 50;
+        box-sizing: border-box;
+    }
+
+    .album img {
+        width: clamp(75px, 25vw, 150px);
+        height: clamp(75px, 25vw, 150px);
+    }
+
+    #albumart {
+        border-width: 2px;
+        border-radius: 7px;
+    }
+
+    .songinfo p {
+        margin: 3px;
+        font-size: clamp(0.7rem, 3vw, 0.95rem);
+    }
+
+    .musicplayerinfo h2 {
+        font-size: clamp(0.9rem, 3.8vw, 1.3rem);
+    }
+
+    #songtitle {
+        font-size: clamp(0.8rem, 3.5vw, 1.2rem);
+        overflow-wrap: anywhere;
+    }
+
+    .musicbuttons {
+        gap: clamp(3px, 1.5vw, 10px);
+        margin: 6px 0;
+        flex-wrap: wrap;
+    }
+
+    .musicbuttons button {
+        padding: clamp(5px, 1.5vw, 8px);
+        margin-top: 3px;
+        font-size: clamp(0.65rem, 2.8vw, 0.9rem);
+    }
+
+    #timestamp {
+        font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+    }
+
+    .weather {
+        position: fixed;
+        z-index: 50;
+        box-sizing: border-box;
+    }
+
+    .weatherdisplay {
+        gap: clamp(5px, 2vw, 12px);
+    }
+
+    #weathericon {
+        font-size: clamp(2.8rem, 12vw, 6rem);
+    }
+
+    .weatherinfo h1 {
+        font-size: clamp(1.7rem, 8vw, 3rem);
+    }
+
+    .weatherinfo p {
+        font-size: clamp(0.85rem, 4vw, 1.6rem);
+    }
+
+    label {
+        margin: 8px 0;
+        font-size: clamp(0.8rem, 3vw, 1rem);
+    }
+
+    .desktopshortcuts {
+        display: none;
+    }
+}
