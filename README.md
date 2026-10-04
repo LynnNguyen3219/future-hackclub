@@ -9,6 +9,7 @@ a personal website inspired by frutiger aero and operating systems
 - fully functional desktop shortcuts and a taskbar with working date/time
 - a functional music player and weather widget (that can also be hidden and moved around)
 - a feature to change the wallpaper with 6 options to choose from
+- mobile-friendly interface that has full functionality
 
 ## acknowledgements
 - built for hack club's <a href=https://future.hackclub.com/>future ysws program</a>
