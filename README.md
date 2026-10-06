@@ -1,7 +1,7 @@
 # lynnUX - personal website
 a personal website inspired by frutiger aero and operating systems
 <br>
-> https://lynnnguyen3219.github.io/lynnUX-futureysws/
+> https://lynnnguyen3219.github.io/lynnUX/
 
 ## featuring...
 - a desktop-like interface with draggable and closable app windows
